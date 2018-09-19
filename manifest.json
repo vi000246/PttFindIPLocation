@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "PttFindIPLocation",
+  "description": "Find PTT Users Location",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://term.ptt.cc/","https://iamchucky.github.io/PttChrome/*"],
+      "js": ["jquery-3.3.1.min.js", "myscript.js"]
+    }
+  ]
+}
